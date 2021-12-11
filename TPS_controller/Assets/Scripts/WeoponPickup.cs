@@ -39,13 +39,9 @@ public class WeoponPickup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-
-
-
             playerWeopon.hasWeopon = true;
             Newweopon = Instantiate(weoponPrefab).GetComponent<RayCastWeopon>();
             
-
             switch (pickUpType)
             {
                 case WeoponType.RPG:

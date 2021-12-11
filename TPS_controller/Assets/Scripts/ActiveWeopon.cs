@@ -23,6 +23,7 @@ public class ActiveWeopon : MonoBehaviour
     Transform AssualtPos;
     [SerializeField]
     Transform GunPos;
+    
     [SerializeField]
     Transform RocketPos;
     [SerializeField]
@@ -39,7 +40,7 @@ public class ActiveWeopon : MonoBehaviour
     {
         instance = this;
     }
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -49,18 +50,15 @@ public class ActiveWeopon : MonoBehaviour
             EquipWeopon(curWeopon);
     }
 
+    
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-
         if(weopon)
          {
-            bool hostle = Input.GetKeyDown(KeyCode.X);
-            RigController.SetBool("Hostle", hostle);
-
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("Weopon is Firing");
                 weopon.StartFiring();
             }
             else if (Input.GetMouseButtonUp(0))
