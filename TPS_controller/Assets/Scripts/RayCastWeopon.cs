@@ -31,10 +31,11 @@ public class RayCastWeopon : MonoBehaviour
         ray.direction = raycastDestination.position - raycastOrigin.position;
         if(Physics.Raycast(ray, out hitInfo))
         {
-            //bulletEffect.transform.position = hitInfo.point;
-            //bulletEffect.transform.forward = hitInfo.normal;
-            //bulletEffect.Emit(1);
             Debug.DrawLine(ray.origin, hitInfo.point, Color.red, 1.0f);
+            if(hitInfo.collider && hitInfo.collider.GetComponent<Rigidbody>())
+            {
+                hitInfo.collider.GetComponent<Rigidbody>().AddForce(ray.direction*100f);
+            }
         }
 
         particles.Emit(1);
@@ -43,5 +44,6 @@ public class RayCastWeopon : MonoBehaviour
     {
         isFiring = false;
     }
+   
     
 }

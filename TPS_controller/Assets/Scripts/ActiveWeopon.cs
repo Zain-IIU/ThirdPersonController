@@ -56,6 +56,7 @@ public class ActiveWeopon : MonoBehaviour
     {
         if(weopon)
          {
+            AimWeopon();
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Weopon is Firing");
@@ -65,8 +66,6 @@ public class ActiveWeopon : MonoBehaviour
             {
                 weopon.StopFiring();
             }
-
-
         }
        
      }
@@ -81,8 +80,19 @@ public class ActiveWeopon : MonoBehaviour
         
     }
 
-  
-    
+    private void AimWeopon()
+    {
+        if(Input.GetMouseButton(1))
+        {
+            CameraManager.instance.ChangeMainCamPriority(true);
+        }
+        else if(Input.GetMouseButtonUp(1))
+        {
+            CameraManager.instance.ChangeMainCamPriority(false);
+        }
+    }
+
+
     public bool hasWeopon()
     {
         return isEquied;
