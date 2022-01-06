@@ -14,7 +14,7 @@ public class AnimationHandler : MonoBehaviour
     }
     private void Start()
     {
-        // Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         GameManager.instance.onGameStarted += startAnimator;
     }
 
@@ -22,7 +22,6 @@ public class AnimationHandler : MonoBehaviour
     {
         startAnimating = true;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,8 +30,6 @@ public class AnimationHandler : MonoBehaviour
         SetTransition(X, Y);
         
     }
-
-
     void SetTransition(float X,float Y)
     {
         if(startAnimating)
@@ -42,7 +39,7 @@ public class AnimationHandler : MonoBehaviour
             Anim.SetBool("run", Input.GetButton("Run"));
             Anim.SetBool("isEquiped", ActiveWeopon.instance.hasWeopon());
         }
-
+        
     }
 
  

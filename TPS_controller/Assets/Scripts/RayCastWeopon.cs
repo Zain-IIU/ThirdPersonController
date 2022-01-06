@@ -29,18 +29,21 @@ public class RayCastWeopon : MonoBehaviour
     [SerializeField]
     float delayBWshots;
 
+    [SerializeField]
+    WeaponRecoil recoil;
     #endregion
 
 
     void Awake()
     {
         raycastDestination = GameObject.FindObjectOfType<CrossHairTarget>().transform;
+        recoil = this.gameObject.GetComponent<WeaponRecoil>();
     }
 
     private void Update()
     {
         Shoot();
-        AimWeopon();
+        Aim();
     }
 
     private void Shoot()
@@ -97,7 +100,7 @@ public class RayCastWeopon : MonoBehaviour
     {
         return isSingleShot;
     }
-    private void AimWeopon()
+    private void Aim()
     {
         if (Input.GetMouseButton(1))
         {

@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
+using DG.Tweening;
+
 public class CameraManager : MonoBehaviour
 {
     public static CameraManager instance;
 
     [SerializeField]
-    CinemachineVirtualCamera mainCam_Normal;
-    [SerializeField]
-    CinemachineVirtualCamera mainCam_Aim;
+    Cinemachine.CinemachineVirtualCamera  mainCam_Normal;
+ 
 
 
     private void Awake()
@@ -20,9 +21,19 @@ public class CameraManager : MonoBehaviour
         else
          instance = this;
     }
-   public void ChangeMainCamPriority(bool value)
+   public void ChangeMainCamPriority(bool flag)
     {
-        mainCam_Normal.gameObject.SetActive(!value);
-        mainCam_Aim.gameObject.SetActive(value);
+        if (flag)
+        {
+            DOTween.To(() => mainCam_Normal.m_Lens.FieldOfView, x => mainCam_Normal.m_Lens.FieldOfView = x, 25f, 0.15f);
+        }
+        else
+        {
+            DOTween.To(() => mainCam_Normal.m_Lens.FieldOfView, x => mainCam_Normal.m_Lens.FieldOfView = x,40f, 0.15f);
+
+        }
+
     }
+
+  
 }

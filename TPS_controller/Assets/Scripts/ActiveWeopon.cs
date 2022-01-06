@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 using UnityEditor.Animations;
-
+using Cinemachine;
 
 public class ActiveWeopon : MonoBehaviour
 {
@@ -30,11 +30,8 @@ public class ActiveWeopon : MonoBehaviour
     Transform SniperPos;
     [SerializeField]
     Transform ShotGunPos;
-
+    [SerializeField] Cinemachine3rdPersonFollow _camera;
     public Animator RigController;
-
-   
-   
     bool isEquied;
     private void Awake()
     {
@@ -54,6 +51,7 @@ public class ActiveWeopon : MonoBehaviour
     {
         isEquied = true;
         weopon = newWeopon;
+       // weopon.GetComponent<WeaponRecoil>().playerCamera = _camera;
         RigController.Play(weopon.Type.ToString());
         Debug.Log(weopon.Type.ToString());        
     }
