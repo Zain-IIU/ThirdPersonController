@@ -178,8 +178,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFiring: 0
+  particles: {fileID: 0}
   Type: 4
   pivotingAnimation: {fileID: 7400000, guid: 4eb0a1657d63edd43a23c0f24f6278de, type: 2}
+  raycastOrigin: {fileID: 0}
+  raycastDestination: {fileID: 0}
+  bulletEffect: {fileID: 0}
+  isSingleShot: 1
 --- !u!1 &4384189737457229756
 GameObject:
   m_ObjectHideFlags: 0

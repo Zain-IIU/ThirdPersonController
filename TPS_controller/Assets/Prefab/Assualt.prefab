@@ -104,6 +104,8 @@ MonoBehaviour:
   raycastOrigin: {fileID: 5071925998834029723}
   raycastDestination: {fileID: 0}
   bulletEffect: {fileID: 6485893221161438405}
+  isSingleShot: 0
+  delayBWshots: 0.12
 --- !u!1 &2683343957045198766
 GameObject:
   m_ObjectHideFlags: 0

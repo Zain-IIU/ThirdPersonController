@@ -44,55 +44,21 @@ public class ActiveWeopon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
         RayCastWeopon curWeopon = GetComponentInChildren<RayCastWeopon>();
         if (curWeopon)
             EquipWeopon(curWeopon);
     }
 
-    
-    // Update is called once per frame
-    private void Update()
-    {
-        if(weopon)
-         {
-            AimWeopon();
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("Weopon is Firing");
-                weopon.StartFiring();
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                weopon.StopFiring();
-            }
-        }
-       
-     }
-
+   
     public void EquipWeopon(RayCastWeopon newWeopon)
     {
-        
         isEquied = true;
         weopon = newWeopon;
         RigController.Play(weopon.Type.ToString());
-        Debug.Log(weopon.Type.ToString());
-        
+        Debug.Log(weopon.Type.ToString());        
     }
 
-    private void AimWeopon()
-    {
-        if(Input.GetMouseButton(1))
-        {
-            CameraManager.instance.ChangeMainCamPriority(true);
-        }
-        else if(Input.GetMouseButtonUp(1))
-        {
-            CameraManager.instance.ChangeMainCamPriority(false);
-        }
-    }
-
-
+   
     public bool hasWeopon()
     {
         return isEquied;

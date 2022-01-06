@@ -31,11 +31,14 @@ public class UIManager : MonoBehaviour
         Invoke(nameof(PlayMainAnimation), 2f);
     }
 
-    public void PlayMainAnimation()
+    private void PlayMainAnimation()
     {
         loadingBar.DOScale(0, tweeningTime/2).OnComplete(() =>
-         { 
-            BG_Panel.DOScaleY(0, tweeningTime).SetEase(easeType);
+         {
+             BG_Panel.DOScaleY(0, tweeningTime).SetEase(easeType).OnComplete(() =>
+             {
+                 GameManager.instance.StartGame();
+             });
          });
         
     }

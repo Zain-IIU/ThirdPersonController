@@ -28,18 +28,29 @@ public class AimingSystem : MonoBehaviour
     {
         mainCam = Camera.main;
     }
-    
+    private void Start()
+    {
+        GameManager.instance.onGameStarted += StartAiming;
+    }
+
+    private void StartAiming()
+    {
+        isAiming = true;
+    }
 
     private void FixedUpdate()
     {
-        xAxis.Update(Time.fixedDeltaTime);
-        yAxis.Update(Time.fixedDeltaTime);
+        if(isAiming)
+        {
+            xAxis.Update(Time.fixedDeltaTime);
+            yAxis.Update(Time.fixedDeltaTime);
 
-        cameraLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0f);
-        float yRot = mainCam.transform.rotation.eulerAngles.y;
-        transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), 0.05f);
+            cameraLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0f);
+            float yRot = mainCam.transform.rotation.eulerAngles.y;
+            transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), 0.05f);
 
-      
+        }
+
     }
 
    

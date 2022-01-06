@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RayCastWeopon : MonoBehaviour
 {
+    #region Variables
     [SerializeField]
     bool isFiring = false;
     [SerializeField]
@@ -20,9 +21,57 @@ public class RayCastWeopon : MonoBehaviour
     ParticleSystem bulletEffect;
     Ray ray;
     RaycastHit hitInfo;
+
+    [SerializeField]
+    bool isSingleShot;
+
+    bool hasShot;
+    [SerializeField]
+    float delayBWshots;
+
+    #endregion
+
+
     void Awake()
     {
         raycastDestination = GameObject.FindObjectOfType<CrossHairTarget>().transform;
+    }
+
+    private void Update()
+    {
+        Shoot();
+        AimWeopon();
+    }
+
+    private void Shoot()
+    {
+        if (isSingleShot)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                StartFiring();
+            }
+
+        }
+        else if (!isSingleShot)
+        {
+            if (Input.GetMouseButton(0) && !hasShot)
+            {
+                StartFiring();
+                hasShot = true;
+                StartCoroutine(nameof(waitforRecoil));
+
+            }
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            StopFiring();
+        }
+    }
+    IEnumerator waitforRecoil()
+    {
+        yield return new WaitForSeconds(delayBWshots);
+        hasShot = false;
     }
     public void StartFiring()
     {
@@ -44,6 +93,21 @@ public class RayCastWeopon : MonoBehaviour
     {
         isFiring = false;
     }
-   
-    
+    public bool getShotType()
+    {
+        return isSingleShot;
+    }
+    private void AimWeopon()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            CameraManager.instance.ChangeMainCamPriority(true);
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            CameraManager.instance.ChangeMainCamPriority(false);
+        }
+    }
+
+
 }
