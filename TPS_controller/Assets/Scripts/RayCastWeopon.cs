@@ -62,7 +62,7 @@ public class RayCastWeopon : MonoBehaviour
             {
                 StartFiring();
                 hasShot = true;
-                StartCoroutine(nameof(waitforRecoil));
+                StartCoroutine(nameof(waitforNextShot));
 
             }
         }
@@ -71,7 +71,7 @@ public class RayCastWeopon : MonoBehaviour
             StopFiring();
         }
     }
-    IEnumerator waitforRecoil()
+    IEnumerator waitforNextShot()
     {
         yield return new WaitForSeconds(delayBWshots);
         hasShot = false;

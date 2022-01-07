@@ -51,7 +51,6 @@ public class ActiveWeopon : MonoBehaviour
     {
         isEquied = true;
         weopon = newWeopon;
-       // weopon.GetComponent<WeaponRecoil>().playerCamera = _camera;
         RigController.Play(weopon.Type.ToString());
         Debug.Log(weopon.Type.ToString());        
     }
