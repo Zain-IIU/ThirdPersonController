@@ -10,7 +10,8 @@ public class RayCastWeopon : MonoBehaviour
     [SerializeField]
     ParticleSystem particles;
     public WeoponType Type;
-
+    
+    public Animator Rig;
     public  AnimationClip pivotingAnimation;
 
     [SerializeField]
@@ -27,19 +28,24 @@ public class RayCastWeopon : MonoBehaviour
 
     bool hasShot;
     [SerializeField]
-    float delayBWshots;
-
+    float _Multi;
+    [SerializeField]
+    float _Single;
     [SerializeField]
     WeaponRecoil recoil;
     #endregion
 
-
+  
     void Awake()
     {
         raycastDestination = GameObject.FindObjectOfType<CrossHairTarget>().transform;
         recoil = this.gameObject.GetComponent<WeaponRecoil>();
     }
 
+    private void Start()
+    {
+        EventsManager.instance.onRecoil += RecoilAnimation; 
+    }
     private void Update()
     {
         Shoot();
@@ -50,15 +56,17 @@ public class RayCastWeopon : MonoBehaviour
     {
         if (isSingleShot)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !hasShot) 
             {
                 StartFiring();
+                hasShot = true;
+                StartCoroutine(nameof(waitforNextShot));
             }
 
         }
         else if (!isSingleShot)
         {
-            if (Input.GetMouseButton(0) && !hasShot)
+            if (Input.GetMouseButton(0) && !hasShot )
             {
                 StartFiring();
                 hasShot = true;
@@ -73,9 +81,13 @@ public class RayCastWeopon : MonoBehaviour
     }
     IEnumerator waitforNextShot()
     {
-        yield return new WaitForSeconds(delayBWshots);
+        if(!isSingleShot)
+         yield return new WaitForSeconds(_Multi);
+        else
+            yield return new WaitForSeconds(_Single);
         hasShot = false;
     }
+
     public void StartFiring()
     {
         isFiring = true;
@@ -89,17 +101,21 @@ public class RayCastWeopon : MonoBehaviour
                 hitInfo.collider.GetComponent<Rigidbody>().AddForce(ray.direction*100f);
             }
         }
-
+        EventsManager.instance.RecoilEvent(Type.ToString());
+        recoil.GenerateRecoil();
         particles.Emit(1);
     }
+
     public void StopFiring()
     {
         isFiring = false;
     }
+
     public bool getShotType()
     {
         return isSingleShot;
     }
+
     private void Aim()
     {
         if (Input.GetMouseButton(1))
@@ -112,5 +128,11 @@ public class RayCastWeopon : MonoBehaviour
         }
     }
 
+    private void RecoilAnimation(string weoponName)
+    {
+        Debug.Log("weoponRecoil" + weoponName);
+        Rig.Play("weoponRecoil" + weoponName, 1, 0.0f);
+    }
+  
 
 }

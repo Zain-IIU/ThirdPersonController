@@ -14,9 +14,9 @@ public class AimingSystem : MonoBehaviour
     Camera mainCam;
 
     [SerializeField]
-    Cinemachine.AxisState xAxis;
+     public Cinemachine.AxisState xAxis;
     [SerializeField]
-    Cinemachine.AxisState yAxis;
+    public Cinemachine.AxisState yAxis;
 
 
     [SerializeField]

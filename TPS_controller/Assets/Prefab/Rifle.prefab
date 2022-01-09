@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 2687569543583982608}
   - component: {fileID: 2695727675428362558}
   - component: {fileID: 7119185805788554940}
+  - component: {fileID: -6352876737145089217}
+  - component: {fileID: 824765870237787222}
   m_Layer: 0
-  m_Name: Assualt
+  m_Name: Rifle
   m_TagString: Rifle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,13 +102,86 @@ MonoBehaviour:
   isFiring: 0
   particles: {fileID: 6690411187970556042}
   Type: 1
+  Rig: {fileID: 0}
   pivotingAnimation: {fileID: 7400000, guid: db0e11a393b602a40abbdf47285eb61b, type: 2}
   raycastOrigin: {fileID: 5071925998834029723}
   raycastDestination: {fileID: 0}
   bulletEffect: {fileID: 6485893221161438405}
   isSingleShot: 0
-  delayBWshots: 0.12
+  _Multi: 0.09
+  _Single: 0
   recoil: {fileID: 0}
+--- !u!114 &-6352876737145089217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682011300779411014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371d6654c4c7a114eb39fb8c80a604f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  cameraShake: {fileID: 0}
+  recoilDuration: 0.05
+  verticalRecoil: 10
+  horizontalPatterns:
+  - 10
+  - 8
+  - 6
+  - 4
+  - 2
+  - 0
+  - -2
+  - -4
+  - -6
+  - -8
+  - -10
+  doShake: 1
+--- !u!114 &824765870237787222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682011300779411014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_RawSignal: {fileID: 11400000, guid: 6ecacb50d29b285478ea9db645455345, type: 2}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 1000
+    m_PropagationSpeed: 343
 --- !u!1 &2683343957045198766
 GameObject:
   m_ObjectHideFlags: 0

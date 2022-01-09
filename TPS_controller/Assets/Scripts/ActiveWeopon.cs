@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using Cinemachine;
 
 public class ActiveWeopon : MonoBehaviour
 {
     public static ActiveWeopon instance;
     public RayCastWeopon weopon;
-    
+    [SerializeField]
+    AimingSystem playerCam;
     [Header("Constraints")]
     [SerializeField]
     Transform refLeftHand;
@@ -33,6 +34,7 @@ public class ActiveWeopon : MonoBehaviour
     [SerializeField] Cinemachine3rdPersonFollow _camera;
     public Animator RigController;
     bool isEquied;
+
     private void Awake()
     {
         instance = this;
@@ -41,6 +43,7 @@ public class ActiveWeopon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerCam = GetComponent<AimingSystem>();
         RayCastWeopon curWeopon = GetComponentInChildren<RayCastWeopon>();
         if (curWeopon)
             EquipWeopon(curWeopon);
@@ -50,9 +53,11 @@ public class ActiveWeopon : MonoBehaviour
     public void EquipWeopon(RayCastWeopon newWeopon)
     {
         isEquied = true;
-        weopon = newWeopon;
+        weopon = newWeopon;    
+        weopon.GetComponent<WeaponRecoil>().playerCamera = playerCam;
+        weopon.Rig = RigController;
+
         RigController.Play(weopon.Type.ToString());
-        Debug.Log(weopon.Type.ToString());        
     }
 
    
