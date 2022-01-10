@@ -23,6 +23,8 @@ public class AimingSystem : MonoBehaviour
     Transform cameraLookAt;
 
     bool isAiming = false;
+
+    float yRot;
     // Start is called before the first frame update
     void Awake()
     {
@@ -30,26 +32,21 @@ public class AimingSystem : MonoBehaviour
     }
     private void Start()
     {
-        GameManager.instance.onGameStarted += StartAiming;
-    }
-
-    private void StartAiming()
-    {
-        isAiming = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
     }
 
     private void FixedUpdate()
     {
-        if(isAiming)
+        if(Input.GetKey(KeyCode.Q)==false)
         {
             xAxis.Update(Time.fixedDeltaTime);
             yAxis.Update(Time.fixedDeltaTime);
-
             cameraLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0f);
-            float yRot = mainCam.transform.rotation.eulerAngles.y;
-            transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), 0.05f);
-
+            yRot = mainCam.transform.rotation.eulerAngles.y;
         }
+        transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), turnSpeed);
+
 
     }
 

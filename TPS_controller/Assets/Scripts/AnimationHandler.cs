@@ -14,7 +14,7 @@ public class AnimationHandler : MonoBehaviour
     }
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         GameManager.instance.onGameStarted += startAnimator;
     }
 

@@ -49,14 +49,12 @@ public class ActiveWeopon : MonoBehaviour
             EquipWeopon(curWeopon);
     }
 
-   
     public void EquipWeopon(RayCastWeopon newWeopon)
     {
         isEquied = true;
         weopon = newWeopon;    
         weopon.GetComponent<WeaponRecoil>().playerCamera = playerCam;
         weopon.Rig = RigController;
-
         RigController.Play(weopon.Type.ToString());
     }
 
