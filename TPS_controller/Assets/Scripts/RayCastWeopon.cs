@@ -26,6 +26,8 @@ public class RayCastWeopon : MonoBehaviour
     [SerializeField]
     bool isSingleShot;
 
+    bool isAiming;
+
     bool hasShot;
     [SerializeField]
     float _Multi;
@@ -102,7 +104,10 @@ public class RayCastWeopon : MonoBehaviour
             }
         }
         EventsManager.instance.RecoilEvent(Type.ToString());
-        recoil.GenerateRecoil();
+        if (isAiming)
+            recoil.GenerateRecoil(true);
+        else
+            recoil.GenerateRecoil();
         particles.Emit(1);
     }
 
@@ -120,10 +125,12 @@ public class RayCastWeopon : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
+            isAiming = true;
             CameraManager.instance.ChangeMainCamPriority(true);
         }
         else if (Input.GetMouseButtonUp(1))
         {
+            isAiming = false;
             CameraManager.instance.ChangeMainCamPriority(false);
         }
     }

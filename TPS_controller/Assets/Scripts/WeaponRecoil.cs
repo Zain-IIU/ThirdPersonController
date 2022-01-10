@@ -9,47 +9,61 @@ public class WeaponRecoil : MonoBehaviour
      public AimingSystem playerCamera;
     [HideInInspector]
     public CinemachineImpulseSource cameraShake;
-   
+
     [SerializeField]
     float recoilDuration;
-
     float curTime;
+
+
     [SerializeField]
-    float verticalRecoil;    
+    float verticalRecoil;
+    float horizontalRecoil;
     [SerializeField]
     float[] horizontalPatterns;
-    public bool doShake;
 
+
+    [SerializeField] bool doShake;
+
+    float curVerticalRecoil;
     
     private void Awake()
     {
         cameraShake = GetComponent<CinemachineImpulseSource>();
     }
-   
 
+    private void Start()
+    {
+        curVerticalRecoil = verticalRecoil;
+    }
     private void Update()
     {
         if(curTime>0)
-        {         
-            playerCamera.yAxis.Value -= ((verticalRecoil / 10) * Time.deltaTime) / recoilDuration;
-            playerCamera.xAxis.Value -= ((horizontalPatterns[Random.Range(0, horizontalPatterns.Length)] / 10) * Time.deltaTime) / recoilDuration;
+        {
+          
+            playerCamera.yAxis.Value -= ((curVerticalRecoil / 10) * Time.deltaTime) / recoilDuration;
+            playerCamera.xAxis.Value -= ((horizontalRecoil / 10) * Time.deltaTime) / recoilDuration;
             curTime -= Time.deltaTime;
+        }
+        else
+        {
+            curVerticalRecoil = verticalRecoil;
         }
     }
 
     public void GenerateRecoil()
     {
+        curVerticalRecoil = verticalRecoil;
           curTime = recoilDuration;
         if(doShake)
             cameraShake.GenerateImpulse(Camera.main.transform.forward);
     }
     public void GenerateRecoil(bool isAim)
     {
-        verticalRecoil /= 2;
-
+        if(horizontalPatterns.Length>0)
+            horizontalRecoil = horizontalPatterns[Random.Range(0, horizontalPatterns.Length)];
+        curVerticalRecoil /= 2;
+        horizontalRecoil /= 2;
         curTime = recoilDuration;
-        if (doShake)
-            cameraShake.GenerateImpulse(Camera.main.transform.forward);
     }
 
 }
