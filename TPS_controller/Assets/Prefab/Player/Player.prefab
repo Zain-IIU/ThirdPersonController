@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949568d83a4f17542bffedf5c99bbf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 20
+  turnSpeed: 0.05
   bodyIK: {fileID: 4344575801149352522}
   xAxis:
     Value: 0
@@ -1824,7 +1824,7 @@ MonoBehaviour:
     FieldOfView: 40
     OrthographicSize: 5
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 500
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -1934,6 +1934,7 @@ MonoBehaviour:
   - {fileID: 4344575801314778058}
   - {fileID: 4344575801434681872}
   - {fileID: 4344575801799063689}
+  - {fileID: 4344575802016218076}
   hasWeopon: 0
   curWeoponIndex: 0
 --- !u!1 &4344575800670554193
