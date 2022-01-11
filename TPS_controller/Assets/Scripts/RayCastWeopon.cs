@@ -56,30 +56,34 @@ public class RayCastWeopon : MonoBehaviour
 
     private void Shoot()
     {
-        if (isSingleShot)
+        if(Input.GetKey(KeyCode.Q) == false)
         {
-            if (Input.GetMouseButtonDown(0) && !hasShot) 
+            if (isSingleShot)
             {
-                StartFiring();
-                hasShot = true;
-                StartCoroutine(nameof(waitforNextShot));
-            }
-
-        }
-        else if (!isSingleShot)
-        {
-            if (Input.GetMouseButton(0) && !hasShot )
-            {
-                StartFiring();
-                hasShot = true;
-                StartCoroutine(nameof(waitforNextShot));
+                if (Input.GetMouseButtonDown(0) && !hasShot)
+                {
+                    StartFiring();
+                    hasShot = true;
+                    StartCoroutine(nameof(waitforNextShot));
+                }
 
             }
+            else if (!isSingleShot)
+            {
+                if (Input.GetMouseButton(0) && !hasShot)
+                {
+                    StartFiring();
+                    hasShot = true;
+                    StartCoroutine(nameof(waitforNextShot));
+
+                }
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                StopFiring();
+            }
         }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            StopFiring();
-        }
+       
     }
     IEnumerator waitforNextShot()
     {

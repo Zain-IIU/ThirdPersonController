@@ -33,7 +33,6 @@ public class AimingSystem : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
     }
 
     private void FixedUpdate()
@@ -44,7 +43,9 @@ public class AimingSystem : MonoBehaviour
             yAxis.Update(Time.fixedDeltaTime);
             cameraLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0f);
             yRot = mainCam.transform.rotation.eulerAngles.y;
+            Cursor.lockState = CursorLockMode.Locked;
         }
+        Cursor.lockState = CursorLockMode.None;
         transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), turnSpeed);
 
 
