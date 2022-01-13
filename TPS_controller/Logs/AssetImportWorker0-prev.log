@@ -1,0 +1,1268 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.16f1 (049d6eca3c44) revision 302446'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1415; Version 2009; 64bit' Language: 'en' Physical Memory: 8009 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Version\2020.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projects/GitHub Clones/Personal Projects/ThirdPersonController/TPS_controller
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55615
+Successfully changed project path to: D:/Projects/GitHub Clones/Personal Projects/ThirdPersonController/TPS_controller
+D:/Projects/GitHub Clones/Personal Projects/ThirdPersonController/TPS_controller
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 103.25 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.16f1 (049d6eca3c44)
+[Subsystems] Discovering subsystems at path D:/Unity Version/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/GitHub Clones/Personal Projects/ThirdPersonController/TPS_controller/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x412)
+    Vendor:   
+    VRAM:     2048 MB
+    Driver:   20.19.15.4963
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Unity Version/2020.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Version/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Version/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Version/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001148 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 88.07 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.175 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2175ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (513ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (226ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005524 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 99.65 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.237 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2238ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1992ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (430ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (1222ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (1001ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3486 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.1 MB.
+System memory in use after: 162.3 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3922.
+Total: 5.821400 ms (FindLiveObjects: 0.613000 ms CreateObjectMapping: 0.417300 ms MarkObjects: 4.671900 ms  DeleteObjects: 0.117100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/HS Header.png
+  artifactKey: Guid(1d50f0545bfd1304eace331e06cb2cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/HS Header.png using Guid(1d50f0545bfd1304eace331e06cb2cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02fc70f2594d2dda9e5054d4536c6114') in 0.162525 seconds 
+  Import took 0.172782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Animations/RifleAnimsetPro/InputForX360GamePad.jpg
+  artifactKey: Guid(28d734b260ab98840bbc9fa5ffcef1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/RifleAnimsetPro/InputForX360GamePad.jpg using Guid(28d734b260ab98840bbc9fa5ffcef1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eddbc1424c5314a7be19e9655bb4dc9d') in 0.052387 seconds 
+  Import took 0.063606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Instagram.png
+  artifactKey: Guid(3d3f575454863be41b91df501a5466e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Instagram.png using Guid(3d3f575454863be41b91df501a5466e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ec7e0664e59417109bbbb8c57be215') in 0.074447 seconds 
+  Import took 0.082330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Lock Bottom.png
+  artifactKey: Guid(b891d65ba4d76704b8d265e52bacdb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Lock Bottom.png using Guid(b891d65ba4d76704b8d265e52bacdb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ccb9828517614ca879fdb146ce19196') in 0.042672 seconds 
+  Import took 0.066574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Message.png
+  artifactKey: Guid(395eac895b603e24db620d6177ea6b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Message.png using Guid(395eac895b603e24db620d6177ea6b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a08787840555972b3900f712f8c3ec') in 0.034475 seconds 
+  Import took 0.044319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Input Field.png
+  artifactKey: Guid(d52fb1ddf8c4ae148b539f04e9e1da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Input Field.png using Guid(d52fb1ddf8c4ae148b539f04e9e1da65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0595c3bc8d1afd02a445d64f279423fc') in 0.029674 seconds 
+  Import took 0.038676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Icon Filled.png
+  artifactKey: Guid(92ef58e83a444d545be5f019f157b891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Icon Filled.png using Guid(92ef58e83a444d545be5f019f157b891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15693b2eb498cf64be03104b3cf63893') in 0.023794 seconds 
+  Import took 0.033683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Location.png
+  artifactKey: Guid(58af90ed02a33574489b6ccc16f5d9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Location.png using Guid(58af90ed02a33574489b6ccc16f5d9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27171eaa5440bbc1b9e468b1370a7eaa') in 0.031264 seconds 
+  Import took 0.039395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Movable Window Filled.png
+  artifactKey: Guid(ddfc95cfe6f5e2a43b984cac708b85e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Movable Window Filled.png using Guid(ddfc95cfe6f5e2a43b984cac708b85e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '539d95260c4a1c6d4a2fa3e3d211faf6') in 0.039162 seconds 
+  Import took 0.046440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Border/Others/Modal Tab Button.png
+  artifactKey: Guid(def0b999bf90eaf48ad972dc8f98df24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Border/Others/Modal Tab Button.png using Guid(def0b999bf90eaf48ad972dc8f98df24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990dc944d7b5d725c2d4acbcf0a1d54d') in 0.040160 seconds 
+  Import took 0.047796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/Metro Exodus Wallpaper.jpg
+  artifactKey: Guid(4cc04ac92ef14f24e894b2a8867efb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/Metro Exodus Wallpaper.jpg using Guid(4cc04ac92ef14f24e894b2a8867efb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247cb196bab983f057b388e7947b7593') in 0.046611 seconds 
+  Import took 0.054911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Icon.png
+  artifactKey: Guid(04e965f1c7b58d7468658f3344f2fdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Icon.png using Guid(04e965f1c7b58d7468658f3344f2fdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc05a57961f8261640365b9bc48a439') in 0.030574 seconds 
+  Import took 0.040881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Kill Gradient.png
+  artifactKey: Guid(b0af360f630cb1140803d25b71c58bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Kill Gradient.png using Guid(b0af360f630cb1140803d25b71c58bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45cd625d04e83312be832a99733d5d8') in 0.032142 seconds 
+  Import took 0.041877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000649 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lamp.png
+  artifactKey: Guid(6ca804909faea644aa355ec5c5a9e1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lamp.png using Guid(6ca804909faea644aa355ec5c5a9e1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809875a07de4c1c3414dbe9f0d111c25') in 0.030306 seconds 
+  Import took 0.040372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message Empty.png
+  artifactKey: Guid(b9d543078a3680345adc248301c8f521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message Empty.png using Guid(b9d543078a3680345adc248301c8f521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199cf853ee0336b4c7fbf0ae0cc42df0') in 0.035620 seconds 
+  Import took 0.043844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Notification.png
+  artifactKey: Guid(00d9b67bc76841443b6966a1a5b465d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Notification.png using Guid(00d9b67bc76841443b6966a1a5b465d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0f142221b8b27007b1de3dc85c4bc5') in 0.038441 seconds 
+  Import took 0.046066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Hexagon.png
+  artifactKey: Guid(4be5b3ab9cc6dd54880d3eb6b53f0118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Hexagon.png using Guid(4be5b3ab9cc6dd54880d3eb6b53f0118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2d50147e08800ef0487b89865cdcf4') in 0.034430 seconds 
+  Import took 0.044637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Models/guy/guy_Top_normal.png
+  artifactKey: Guid(79909b4aee070464296f3319f916dfcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Top_normal.png using Guid(79909b4aee070464296f3319f916dfcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b12f458da27636292b739d775585c6') in 0.021114 seconds 
+  Import took 0.029459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Models/guy/guy_Top_specular.png
+  artifactKey: Guid(3a2eba5a2b6a75540ae97d0ccc1e5fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Top_specular.png using Guid(3a2eba5a2b6a75540ae97d0ccc1e5fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ff9bb47c8c43960705789307efdda1') in 0.047716 seconds 
+  Import took 0.054746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Heart Pop.png
+  artifactKey: Guid(1e1877c27e51cc24395620020cc09681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Heart Pop.png using Guid(1e1877c27e51cc24395620020cc09681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576d747445691f2b011d3adc1d4f0a7e') in 0.040949 seconds 
+  Import took 0.051153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Help.png
+  artifactKey: Guid(49702278c78c41648bcf38cd04605d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Help.png using Guid(49702278c78c41648bcf38cd04605d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc9304155dea8c5130ee1138d18dc29') in 0.046988 seconds 
+  Import took 0.054665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Heart.png
+  artifactKey: Guid(bd190f341a63ae7449752d80a3a8ef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Heart.png using Guid(bd190f341a63ae7449752d80a3a8ef73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71efb2a534fab0ad6845fc6ffba9d54f') in 0.039717 seconds 
+  Import took 0.047196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Notification Header.png
+  artifactKey: Guid(4d392c02f8f90174a9392ac2fe362adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Notification Header.png using Guid(4d392c02f8f90174a9392ac2fe362adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70acd0405bf4fa609e48c7b89e526ecb') in 0.035343 seconds 
+  Import took 0.043200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d5afc2a37af3c4e70a234059ee6df3') in 0.290775 seconds 
+  Import took 0.298676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Bars/Gradient.png
+  artifactKey: Guid(2bf966a522bd9b945a319c967edac765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Bars/Gradient.png using Guid(2bf966a522bd9b945a319c967edac765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da1fea13165d943590cf14e258e598f') in 0.027069 seconds 
+  Import took 0.034791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Flag.png
+  artifactKey: Guid(4d62be2e6da35bc42bc70d7f906c3354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Flag.png using Guid(4d62be2e6da35bc42bc70d7f906c3354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b470183e10b61456a9d76bef0140fb') in 0.028998 seconds 
+  Import took 0.039621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000574 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Tooltip.png
+  artifactKey: Guid(146ad7c4429fc764088d2a5139a2537d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Tooltip.png using Guid(146ad7c4429fc764088d2a5139a2537d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd390aff8e895bd0be0bf0a95090f1d94') in 0.022720 seconds 
+  Import took 0.032444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Gradient.png
+  artifactKey: Guid(1bead13cbb39ba146a2b32f78920b998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Gradient.png using Guid(1bead13cbb39ba146a2b32f78920b998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e520f2e0e8e827c30a1f3498ed8b7ef3') in 0.038931 seconds 
+  Import took 0.052359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Flag Filled.png
+  artifactKey: Guid(e50d3664b445ae14eae21033beade845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Flag Filled.png using Guid(e50d3664b445ae14eae21033beade845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5478475ccdd0b969329243cec62469') in 0.048043 seconds 
+  Import took 0.057438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Icon.png
+  artifactKey: Guid(3ed3bfb48269e2646b4dc2130299c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Icon.png using Guid(3ed3bfb48269e2646b4dc2130299c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208a9bc87e02c000a65580ad57817717') in 0.026240 seconds 
+  Import took 0.036706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Slider.png
+  artifactKey: Guid(b5c20faaa6c0f514092673e609258886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Slider.png using Guid(b5c20faaa6c0f514092673e609258886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc08c881a8772095b799721dee2c7ab') in 0.021928 seconds 
+  Import took 0.029895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/FPS BG Placeholder.jpg
+  artifactKey: Guid(4b10478ce5725e9418552d4118e3eb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/FPS BG Placeholder.jpg using Guid(4b10478ce5725e9418552d4118e3eb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a750ca0d7c1c5c262556d513725bbf') in 0.047348 seconds 
+  Import took 0.054826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Border/GUI/GUI Skin - Button Pressed.png
+  artifactKey: Guid(55df7c0e2aab60c438ae7184c5438d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Border/GUI/GUI Skin - Button Pressed.png using Guid(55df7c0e2aab60c438ae7184c5438d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97af07ee5f050a2dc7a4235d3fc298c3') in 0.048740 seconds 
+  Import took 0.057352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/CM Header.png
+  artifactKey: Guid(658627e6354c033459fc8f0892c59de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/CM Header.png using Guid(658627e6354c033459fc8f0892c59de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e68a47d3698daa5d9543dc941e2b57') in 0.032704 seconds 
+  Import took 0.041422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000736 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Content Normal.png
+  artifactKey: Guid(b5f4c39901408204aa2c59639df0432e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Content Normal.png using Guid(b5f4c39901408204aa2c59639df0432e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfacb1f866fa889a8fda6123a17daea') in 0.022102 seconds 
+  Import took 0.031221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Context Menu.png
+  artifactKey: Guid(cceded5b1d0834e48849fb152ac8e53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Context Menu.png using Guid(cceded5b1d0834e48849fb152ac8e53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '469897ac2876b467c89f6e71ec5e3382') in 0.030808 seconds 
+  Import took 0.042322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a74d40d1e28af8e567f3f742c1663b5') in 0.060968 seconds 
+  Import took 0.070953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Minus.png
+  artifactKey: Guid(9964955250a501b49ad0d9df1c632e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Minus.png using Guid(9964955250a501b49ad0d9df1c632e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337573d8e2b5cabd2a8e8ffaf5392b98') in 0.043416 seconds 
+  Import took 0.059138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Facebook.png
+  artifactKey: Guid(f8bbd5a5ecb25084caf3f1299d81e581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Facebook.png using Guid(f8bbd5a5ecb25084caf3f1299d81e581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22707a05767567257371e60ecb44651f') in 0.031761 seconds 
+  Import took 0.043522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Location Mark.png
+  artifactKey: Guid(800d082fc01ca114f86956479395844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Location Mark.png using Guid(800d082fc01ca114f86956479395844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74749c643b008215c7d52a590ff5605') in 0.035551 seconds 
+  Import took 0.055150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Globe.png
+  artifactKey: Guid(c7353b93c0ea87c46af8eba38a20a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Globe.png using Guid(c7353b93c0ea87c46af8eba38a20a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71f792eda983f77c4997955d3c57d6d') in 0.033222 seconds 
+  Import took 0.042103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Lock Top.png
+  artifactKey: Guid(5a63e931255ab3043a9aec2a315b323f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Others/Animation Icon Stuff/Lock Top.png using Guid(5a63e931255ab3043a9aec2a315b323f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb567391db8b1f5b830796b9003cc226') in 0.037449 seconds 
+  Import took 0.047152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Media/Music.png
+  artifactKey: Guid(3881a589da314734096a8ebe09c4e236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Media/Music.png using Guid(3881a589da314734096a8ebe09c4e236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2f6cf4cd1d8408121711d57752727b') in 0.031931 seconds 
+  Import took 0.040512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Med Pack Filled.png
+  artifactKey: Guid(453932e673e5d5e45857141b7f3d9b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Med Pack Filled.png using Guid(453932e673e5d5e45857141b7f3d9b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca5df198e882d65beb922e54e18f6ce') in 0.025130 seconds 
+  Import took 0.033821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Medical.png
+  artifactKey: Guid(54e30e20225348849bb6ed755b8af129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Medical.png using Guid(54e30e20225348849bb6ed755b8af129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1236d8e4d240bcfbe25014371aaf85c') in 0.029072 seconds 
+  Import took 0.039106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/MUIP.png
+  artifactKey: Guid(80446df71d1bfe347bdaf2832170a76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/MUIP.png using Guid(80446df71d1bfe347bdaf2832170a76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9765b613e0400d449b8794ed182e47cc') in 0.038629 seconds 
+  Import took 0.046302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Border/GUI/GUI Skin - Button Normal.png
+  artifactKey: Guid(d88b03a7da3ddc84b882c452fd42f025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Border/GUI/GUI Skin - Button Normal.png using Guid(d88b03a7da3ddc84b882c452fd42f025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20250ac374d6152215f7031edb51881') in 0.040646 seconds 
+  Import took 0.048772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png
+  artifactKey: Guid(7a33180745301ca4b903e0c6e51cfeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Horizontal Selector.png using Guid(7a33180745301ca4b903e0c6e51cfeb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea821aac16f11ac55d7019176d9d16b4') in 0.032108 seconds 
+  Import took 0.039780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Email.png
+  artifactKey: Guid(7d891b18332e2174a97d6f6588bca6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Email.png using Guid(7d891b18332e2174a97d6f6588bca6ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b910f2d3e7ff58477438ec3b75ee85') in 0.031911 seconds 
+  Import took 0.041494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message Filled.png
+  artifactKey: Guid(3ced7172b98225d42afca1f2351860f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message Filled.png using Guid(3ced7172b98225d42afca1f2351860f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e2f251de003314adc4aff973c83d11') in 0.028795 seconds 
+  Import took 0.038182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Shadow/Flat Shadow.png
+  artifactKey: Guid(5a2cc1793ca8c1e4381df95290d5022a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Shadow/Flat Shadow.png using Guid(5a2cc1793ca8c1e4381df95290d5022a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd569b7e5aba67d41b6d4fd645a751f') in 0.027214 seconds 
+  Import took 0.035831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Energy.png
+  artifactKey: Guid(05155b937d71b284892885523cdfbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Energy.png using Guid(05155b937d71b284892885523cdfbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96dfbc56e70bc65f9bb6ca4bf3c8650') in 0.032912 seconds 
+  Import took 0.040974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Switch.png
+  artifactKey: Guid(1de3e885959f3b84f9f25beca3a9503d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Switch.png using Guid(1de3e885959f3b84f9f25beca3a9503d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46635dc54551cb0e75af36e0002fd86b') in 0.031279 seconds 
+  Import took 0.039303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Media/Mic.png
+  artifactKey: Guid(66bf9157a68771e4a82bdfe968f08212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Media/Mic.png using Guid(66bf9157a68771e4a82bdfe968f08212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d084e4b77499fd3f5c222eaba56445') in 0.029822 seconds 
+  Import took 0.041379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000543 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-BoldItalic SDF.asset
+  artifactKey: Guid(b03b7a4c74cd6294ca732f49684716ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-BoldItalic SDF.asset using Guid(b03b7a4c74cd6294ca732f49684716ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03b7c125948d07991d79c9c2dbeb68f') in 0.063270 seconds 
+  Import took 0.072671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Models/guy/guy_Glove_gloss.png
+  artifactKey: Guid(9a4bed5cb56adf64d9cc2979a280519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Glove_gloss.png using Guid(9a4bed5cb56adf64d9cc2979a280519e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63cffb59bb4a9cdde2afefb6be7a5ff') in 0.023259 seconds 
+  Import took 0.033964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Reward/Medal.png
+  artifactKey: Guid(038ccab8cd184d04cb1bfa1d79704320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Reward/Medal.png using Guid(038ccab8cd184d04cb1bfa1d79704320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726e2668bc0e341a72723c856e751cc3') in 0.029253 seconds 
+  Import took 0.040358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Models/guy/guy_Hat_diffuse.png
+  artifactKey: Guid(2f7d96f4fff092f4597c437d605c8233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Hat_diffuse.png using Guid(2f7d96f4fff092f4597c437d605c8233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d5320a297764701626a82f541d968a') in 0.025428 seconds 
+  Import took 0.036401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Heart.png
+  artifactKey: Guid(fd6605543e834054aa05b7c4304b9b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Heart.png using Guid(fd6605543e834054aa05b7c4304b9b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6480c9c13b857c3f8815551dcdf4157f') in 0.034653 seconds 
+  Import took 0.044352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Gallery.png
+  artifactKey: Guid(1cba4db6aa18ce14abe974529a119624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Gallery.png using Guid(1cba4db6aa18ce14abe974529a119624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca2015943dd29b06590f199ef2417cc') in 0.038183 seconds 
+  Import took 0.047105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Input Field.png
+  artifactKey: Guid(e956b4f7a85075c43a444a9f05cc765a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Input Field.png using Guid(e956b4f7a85075c43a444a9f05cc765a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c2d26a6dcbe158b683d2c2d46914fb') in 0.025576 seconds 
+  Import took 0.035750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Models/guy/guy_Shoes_specular.png
+  artifactKey: Guid(14ce3a88c482ae445a9c2eddeefe7589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Shoes_specular.png using Guid(14ce3a88c482ae445a9c2eddeefe7589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c210347e693ef07429dec0880be299cc') in 0.023768 seconds 
+  Import took 0.035535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Data Normal.png
+  artifactKey: Guid(7735db44face0204f8f38edd6fb10564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Data Normal.png using Guid(7735db44face0204f8f38edd6fb10564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be493a5ecb831504a2f4e69b97e52e99') in 0.023013 seconds 
+  Import took 0.033180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Animations/RifleAnimsetPro/UI/icon.png
+  artifactKey: Guid(fc63c3e385cf33c4795a75d3cca479e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/RifleAnimsetPro/UI/icon.png using Guid(fc63c3e385cf33c4795a75d3cca479e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906b03c871b00343889d9620c6ec35a0') in 0.029252 seconds 
+  Import took 0.037514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Melee.png
+  artifactKey: Guid(ed777d74f4b5d9c4d8ade150153f1130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Melee.png using Guid(ed777d74f4b5d9c4d8ade150153f1130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc1084dfc4035878729a6cc10cf8579') in 0.025056 seconds 
+  Import took 0.034537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-Bold SDF.asset
+  artifactKey: Guid(fa328c1ae3ffb6b4583cf371153b0be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-Bold SDF.asset using Guid(fa328c1ae3ffb6b4583cf371153b0be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87dc58cfdd8e575e4a80e2a05233e4e') in 0.061729 seconds 
+  Import took 0.071156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Notepad.png
+  artifactKey: Guid(39607c9c71b0ead449233ef49dcd8816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Notepad.png using Guid(39607c9c71b0ead449233ef49dcd8816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9b0c890d73b27c846c189a1514df324') in 0.033905 seconds 
+  Import took 0.041995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Shadow/Horizontal Shadow.png
+  artifactKey: Guid(390f1c7c5c2f9714d8458c01651acdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Shadow/Horizontal Shadow.png using Guid(390f1c7c5c2f9714d8458c01651acdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d0309c506087073a321bb75191077c') in 0.022751 seconds 
+  Import took 0.033555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Map.png
+  artifactKey: Guid(4b307c9f1eae5644a865e61b227b969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Map/Map.png using Guid(4b307c9f1eae5644a865e61b227b969e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304a5cfdb61715ad4a76ad2591144238') in 0.027206 seconds 
+  Import took 0.034950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Models/guy/guy_Shoes_normal.png
+  artifactKey: Guid(d1bd3d812b2d65d4088ae5351bf05af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Shoes_normal.png using Guid(d1bd3d812b2d65d4088ae5351bf05af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100c44fdabeec9118645daa1f5d6fe86') in 0.027428 seconds 
+  Import took 0.035351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Notification Filled.png
+  artifactKey: Guid(fe3bc1cc05fbcf749a45c5d2abb5c5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Notification Filled.png using Guid(fe3bc1cc05fbcf749a45c5d2abb5c5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc9b6c5ba2226cd4621be9877c6a407') in 0.031632 seconds 
+  Import took 0.040093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Folder.png
+  artifactKey: Guid(03e3778d7fcbf9243a5787a6adac408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Folder.png using Guid(03e3778d7fcbf9243a5787a6adac408f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6b46460381d160f3d472ad3ec0ba60') in 0.031062 seconds 
+  Import took 0.039448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Data Active.png
+  artifactKey: Guid(ffd58b45c9173224a8897582a6b42e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Data Active.png using Guid(ffd58b45c9173224a8897582a6b42e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4711ef665a17074c2ef4b82eb62e14') in 0.017440 seconds 
+  Import took 0.025704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/MW Header.png
+  artifactKey: Guid(5abb6844c7b16194d8f1fa254deb72b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/MW Header.png using Guid(5abb6844c7b16194d8f1fa254deb72b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beff01b1bb9b8be90a62bb08270169f2') in 0.023633 seconds 
+  Import took 0.034344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Dropdown Header.png
+  artifactKey: Guid(3a919d35d10429545a9eef5fdc3bc054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Dropdown Header.png using Guid(3a919d35d10429545a9eef5fdc3bc054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7e24a03094b74291356fa3532589b1') in 0.027802 seconds 
+  Import took 0.035721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Home.png
+  artifactKey: Guid(8a0b3927b61ffa149aeed1d15554f0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Home.png using Guid(8a0b3927b61ffa149aeed1d15554f0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d7e18af1faa5548a6814e75a963f8f') in 0.030432 seconds 
+  Import took 0.040799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/List.png
+  artifactKey: Guid(192e7e9a124cc764ba98943d9c55f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/List.png using Guid(192e7e9a124cc764ba98943d9c55f134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e7b84ac6d706b20e1915b44fa0a493') in 0.023872 seconds 
+  Import took 0.034605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000814 seconds.
+  path: Assets/Models/guy/guy_Top_diffuse.png
+  artifactKey: Guid(977463a31b4cc934bab050e2c52f7c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Top_diffuse.png using Guid(977463a31b4cc934bab050e2c52f7c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefc5b4fdd806ab11f3cd0fe4f5c2572') in 0.017125 seconds 
+  Import took 0.027547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Toggle.png
+  artifactKey: Guid(b0f85f7da5042c0448a526d5ecacbfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Toggle.png using Guid(b0f85f7da5042c0448a526d5ecacbfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11e42e96572bc6cb072cbdee72a7778') in 0.022766 seconds 
+  Import took 0.033948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Models/guy/guy_Glove_specular.png
+  artifactKey: Guid(7b833c61d4bd97441b48f5ed0023fe62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Glove_specular.png using Guid(7b833c61d4bd97441b48f5ed0023fe62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2bbbba297d2c326a74e3c073bda07d') in 0.023073 seconds 
+  Import took 0.033468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Indicator Item Outline.png
+  artifactKey: Guid(04dc2978e2ef8a04e8f7f7ba0f48d039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Indicator Item Outline.png using Guid(04dc2978e2ef8a04e8f7f7ba0f48d039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35be0b78391aa8020e94617e99c736ca') in 0.023470 seconds 
+  Import took 0.034270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Movable Window.png
+  artifactKey: Guid(73c7c456a5c819f4ab7a23f726b6c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Movable Window.png using Guid(73c7c456a5c819f4ab7a23f726b6c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bfde4ffe8ec7327d8cab5d81c45393') in 0.035596 seconds 
+  Import took 0.043273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Grenade Filled.png
+  artifactKey: Guid(acac41f442914c140bf671848a5301fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Grenade Filled.png using Guid(acac41f442914c140bf671848a5301fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987e45917f191baf9ac6c1ed5c258602') in 0.033390 seconds 
+  Import took 0.042983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Horizontal Selector Filled.png
+  artifactKey: Guid(6da1c39ef375dd44490d4b092320cb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Horizontal Selector Filled.png using Guid(6da1c39ef375dd44490d4b092320cb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ecc53dbf9346929bff0e2f42902f65a') in 0.023376 seconds 
+  Import took 0.032693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Grenade.png
+  artifactKey: Guid(ff432a6291ec758459349fc59fb8e82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Grenade.png using Guid(ff432a6291ec758459349fc59fb8e82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7b5cd3ec83e7534e430d1b26a86e21') in 0.030208 seconds 
+  Import took 0.039912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-ExtraBold SDF.asset
+  artifactKey: Guid(ca60657c190bc8c4e89dfb3e23d76209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Fonts/OpenSans-ExtraBold SDF.asset using Guid(ca60657c190bc8c4e89dfb3e23d76209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e459de84783818b9f00b01953375d7b9') in 0.043045 seconds 
+  Import took 0.050972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Models/mahogfloor-Unity/mahogfloor_metalness.psd
+  artifactKey: Guid(c3ef0db536c1536419d7bfeada481fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/mahogfloor-Unity/mahogfloor_metalness.psd using Guid(c3ef0db536c1536419d7bfeada481fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca50c3417d4af86a790bb42012e77dda') in 0.021992 seconds 
+  Import took 0.030130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Models/guy/guy_Hat_gloss.png
+  artifactKey: Guid(05e129b4931f117488b5b26f211d887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Hat_gloss.png using Guid(05e129b4931f117488b5b26f211d887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02c47b0ac83d290ce8567c3df8e9a3f') in 0.020748 seconds 
+  Import took 0.029775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Eye.png
+  artifactKey: Guid(620e785948b4b334c9d0fc5a364e430b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Eye.png using Guid(620e785948b4b334c9d0fc5a364e430b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680080e728637e52c2659e80429c8e4b') in 0.030802 seconds 
+  Import took 0.053443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Med Packs.png
+  artifactKey: Guid(0d1ec1476fa34664fa2a7e698f0f6908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Med Packs.png using Guid(0d1ec1476fa34664fa2a7e698f0f6908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c377495eb99cba712e504b40d87206') in 0.031427 seconds 
+  Import took 0.042139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000592 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message.png
+  artifactKey: Guid(f4bd70bd7d1d65a448438dc918ac4cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Message.png using Guid(f4bd70bd7d1d65a448438dc918ac4cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c1ae9a4604c8a89cd162b317642445') in 0.025697 seconds 
+  Import took 0.035711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Input Field Filled.png
+  artifactKey: Guid(92cf75296be5d5442b59341089f8f88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Input Field Filled.png using Guid(92cf75296be5d5442b59341089f8f88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59135a0985a3d49505e2781babe3d2ca') in 0.025712 seconds 
+  Import took 0.037486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Borders/Icon BG.png
+  artifactKey: Guid(87086eb43ffcedf4cbccd14d54cb2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Borders/Icon BG.png using Guid(87086eb43ffcedf4cbccd14d54cb2e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b57def6e7c9fb39cfd5c2b7afc5fe7c') in 0.023499 seconds 
+  Import took 0.034765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Facebook.png
+  artifactKey: Guid(1e64f8ba631ae514e9a68eaf3620f9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Communication & Social/Facebook.png using Guid(1e64f8ba631ae514e9a68eaf3620f9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36de9a2fc216661c37914f757b15b0e') in 0.028403 seconds 
+  Import took 0.040197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Human Body.png
+  artifactKey: Guid(e90c4af2b6692b0418611f6e6310155b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Human Body.png using Guid(e90c4af2b6692b0418611f6e6310155b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976422a36d9bb1c838c8d6ae7e71bbe8') in 0.046530 seconds 
+  Import took 0.056366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Eye.png
+  artifactKey: Guid(e07717fc47a510742ac0b11da205b050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Eye.png using Guid(e07717fc47a510742ac0b11da205b050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a23c8bbaeed499f3a67b5580d41d6663') in 0.033934 seconds 
+  Import took 0.045567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Pie Chart.png
+  artifactKey: Guid(3ae7671fb73a5df4ebec7a6b32ae8e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Pie Chart.png using Guid(3ae7671fb73a5df4ebec7a6b32ae8e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de17a0b409fbe36001a7e1a4ee52c136') in 0.039304 seconds 
+  Import took 0.052324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Models/guy/guy_Top_gloss.png
+  artifactKey: Guid(642694953a1b978418733f5f42ae040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Top_gloss.png using Guid(642694953a1b978418733f5f42ae040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d363a886914c7c7339ed0b1f98453bd') in 0.028496 seconds 
+  Import took 0.036263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Modal Window Filled.png
+  artifactKey: Guid(3603e158dd7d30c4a8592378c7b346ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Modal Window Filled.png using Guid(3603e158dd7d30c4a8592378c7b346ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ba0b7b6a67a00f36cff9cbf4ac2d5f') in 0.032903 seconds 
+  Import took 0.042096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/EffectExamples/TutorialInfo/Icons/Help_Icon.png
+  artifactKey: Guid(a186f8a87ca4f4d3aa864638ad5dfb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/TutorialInfo/Icons/Help_Icon.png using Guid(a186f8a87ca4f4d3aa864638ad5dfb65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c096ee2b6786085ebcf4f0fccb765dd2') in 0.012833 seconds 
+  Import took 0.022294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Animations/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg
+  artifactKey: Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg using Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2de68735bf98158f846903b004c2d92') in 0.023446 seconds 
+  Import took 0.035611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Models/guy/guy_Hat_normal.png
+  artifactKey: Guid(c12735f4ecb1123459e79c17b5795624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Hat_normal.png using Guid(c12735f4ecb1123459e79c17b5795624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabdb5836a6c539e5503db9e69b413c3') in 0.019369 seconds 
+  Import took 0.029677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Next Arrow.png
+  artifactKey: Guid(177c3a1a565cb5143994be50d339a11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Next Arrow.png using Guid(177c3a1a565cb5143994be50d339a11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1a22566b121f3c6174b9d36413fb9c') in 0.028647 seconds 
+  Import took 0.039105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000832 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Home.png
+  artifactKey: Guid(b7414fdd0411d364ab74c963a05b62d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Home.png using Guid(b7414fdd0411d364ab74c963a05b62d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75902c7bf11f2d83af4a0350b45549e8') in 0.027674 seconds 
+  Import took 0.038435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Models/guy/guy_Hat_specular.png
+  artifactKey: Guid(cc7335ed6bb42a24fbd99975cbaee82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Hat_specular.png using Guid(cc7335ed6bb42a24fbd99975cbaee82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fd3fd2ea626385b251a185fc6e7573') in 0.030935 seconds 
+  Import took 0.037802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Models/guy/guy_Shoes_diffuse.png
+  artifactKey: Guid(b45e361f3251dc740998b56588534fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Shoes_diffuse.png using Guid(b45e361f3251dc740998b56588534fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f05b168f139de2fb2991ed2aded5a9cb') in 0.026035 seconds 
+  Import took 0.035878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Hamburger Menu.png
+  artifactKey: Guid(8c799c695a4faa9489aa950c430e09ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Hamburger Menu.png using Guid(8c799c695a4faa9489aa950c430e09ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b104836ac517725c0dd5ca8815ddef') in 0.026377 seconds 
+  Import took 0.035421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Models/mahogfloor-Unity/mahogfloor_normal.png
+  artifactKey: Guid(e6c77fdd70709124bbeb18f74ec74f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/mahogfloor-Unity/mahogfloor_normal.png using Guid(e6c77fdd70709124bbeb18f74ec74f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c3c0366933b88cb16a1031f206488e') in 0.028799 seconds 
+  Import took 0.036513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor UI Manager.png
+  artifactKey: Guid(f66c4aa44c09b6a42a2b5b9f9334d824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor UI Manager.png using Guid(f66c4aa44c09b6a42a2b5b9f9334d824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e3f54fff3d1f9f3ca65d60d57f7aa1') in 0.033055 seconds 
+  Import took 0.040952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Expand.png
+  artifactKey: Guid(8dcd5f373cd25944eb819fc6795f9dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Navigation/Expand.png using Guid(8dcd5f373cd25944eb819fc6795f9dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de50e418340d6a83e189b18d573d280') in 0.037270 seconds 
+  Import took 0.044520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Email.png
+  artifactKey: Guid(5933afad4a0363d4cbc431d01f89cc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Email.png using Guid(5933afad4a0363d4cbc431d01f89cc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9fa30800172497e7d93820f44ea4285') in 0.039826 seconds 
+  Import took 0.047603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Animations/RifleAnimsetPro/UI/Muzzle.png
+  artifactKey: Guid(f8724b844707dc343b272daafc1c2249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/RifleAnimsetPro/UI/Muzzle.png using Guid(f8724b844707dc343b272daafc1c2249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cecdc64b2b0fe51864340598205ef35') in 0.023093 seconds 
+  Import took 0.032646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Content Active.png
+  artifactKey: Guid(5cdeb515d6f83b34c9f441349d56525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Content Active.png using Guid(5cdeb515d6f83b34c9f441349d56525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584972545bbad025c4da0058414b59aa') in 0.019614 seconds 
+  Import took 0.029128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Home.png
+  artifactKey: Guid(61f8a33cb548acd43bde0fe8dba4301d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Home.png using Guid(61f8a33cb548acd43bde0fe8dba4301d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03af1887446f3387e3599beeaf74ae80') in 0.019312 seconds 
+  Import took 0.030318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Models/mahogfloor-Unity/mahogfloor_basecolor.png
+  artifactKey: Guid(8d51fd5925dfd5d46859971ab541864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/mahogfloor-Unity/mahogfloor_basecolor.png using Guid(8d51fd5925dfd5d46859971ab541864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb391c8a97dd0218bf1f2a6bcce4b07') in 0.022798 seconds 
+  Import took 0.031553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Modal Window.png
+  artifactKey: Guid(443b1643bec077e478f70a7a0fd1adcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Modal Window.png using Guid(443b1643bec077e478f70a7a0fd1adcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220a28e187bb8a13a81bbe65647cb03f') in 0.026168 seconds 
+  Import took 0.035512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/MUIP Big.png
+  artifactKey: Guid(46f64b3ded478fa408af4eeb374bcfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/MUIP Big.png using Guid(46f64b3ded478fa408af4eeb374bcfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961edd00a256565ba236357e967734d2') in 0.034175 seconds 
+  Import took 0.041799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Music Player.png
+  artifactKey: Guid(ab3bc5d611237b94dbbaa45ea56d050e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Phone/Music Player.png using Guid(ab3bc5d611237b94dbbaa45ea56d050e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee99a24dfc8b63bf118c567cd54717b1') in 0.036082 seconds 
+  Import took 0.042566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Heart Filled.png
+  artifactKey: Guid(a40e131b61d22ba42b2955962e636ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Heart Filled.png using Guid(a40e131b61d22ba42b2955962e636ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4784eedb3994ea205ce121ce33ed2e') in 0.036635 seconds 
+  Import took 0.044084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Dropdown.png
+  artifactKey: Guid(0a39a4452fd810640afd1be6e700edee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Dropdown.png using Guid(0a39a4452fd810640afd1be6e700edee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a186079eb0e79a0b01c66d75f9565d51') in 0.030612 seconds 
+  Import took 0.037319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Window Manager.png
+  artifactKey: Guid(6cf11c0849502024eaa15de7d842e9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Window Manager.png using Guid(6cf11c0849502024eaa15de7d842e9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b969a82e1c4b326f8aed9df0789979fc') in 0.034198 seconds 
+  Import took 0.043343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lock.png
+  artifactKey: Guid(cacaf83c4f5642244a1e47f13500c4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lock.png using Guid(cacaf83c4f5642244a1e47f13500c4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e90134b63a3f1f284432ff991f06ab') in 0.024261 seconds 
+  Import took 0.035478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0976d2ac05969c1d74b1aaad5616321e') in 0.028980 seconds 
+  Import took 0.038317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Models/mahogfloor-Unity/mahogfloor_Height.png
+  artifactKey: Guid(1f81e9a8d0a2a36468b10aa9a38e66b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/mahogfloor-Unity/mahogfloor_Height.png using Guid(1f81e9a8d0a2a36468b10aa9a38e66b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8071b2c0a22f9f1518d26625cda51de') in 0.027644 seconds 
+  Import took 0.039031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Horizontal Selector.png
+  artifactKey: Guid(b32c79cf3895ba946abf36a736cfbf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Horizontal Selector.png using Guid(b32c79cf3895ba946abf36a736cfbf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbeb4a17f1ee81afaff71fd12563044b') in 0.023982 seconds 
+  Import took 0.033431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Equip.png
+  artifactKey: Guid(bf43384bb47feb84f9f07992f204c39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Equip.png using Guid(bf43384bb47feb84f9f07992f204c39d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6b9bbb5f49657a172a3706519706bb') in 0.030724 seconds 
+  Import took 0.041309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Button Header.png
+  artifactKey: Guid(e1d870045d1f38449987a3d36e42aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Button Header.png using Guid(e1d870045d1f38449987a3d36e42aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1f169175e7d806128e896e0ce40f43') in 0.026825 seconds 
+  Import took 0.036722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Button.png
+  artifactKey: Guid(98d001ce6b3b53242911dcc3d1415f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Button.png using Guid(98d001ce6b3b53242911dcc3d1415f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786fffd1ad1a4e8cda6679b98f88245b') in 0.020164 seconds 
+  Import took 0.028456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Models/guy/guy_Shoes_gloss.png
+  artifactKey: Guid(9c08476b45fb67a49a6efc846902a4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Shoes_gloss.png using Guid(9c08476b45fb67a49a6efc846902a4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96563ac125ee80572f7fc0728bea877f') in 0.025357 seconds 
+  Import took 0.035878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Progress Bar.png
+  artifactKey: Guid(be8d03bb95afe0641976d654781e9e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Progress Bar.png using Guid(be8d03bb95afe0641976d654781e9e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04ba76a3f49ce4c0b90d4526b1aed8d') in 0.025372 seconds 
+  Import took 0.037474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Animations/RifleAnimsetPro/UI/InputArrow.png
+  artifactKey: Guid(7a78654bd0cf62344b8c01920e984b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/RifleAnimsetPro/UI/InputArrow.png using Guid(7a78654bd0cf62344b8c01920e984b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a94c9ecd6b5ae8f842472b7737f3016') in 0.022670 seconds 
+  Import took 0.032030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Device/Headphones.png
+  artifactKey: Guid(b72c64868a74dd04e9b605a346744fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Device/Headphones.png using Guid(b72c64868a74dd04e9b605a346744fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b5c95c6e9f105a77aab06afc20b333') in 0.054971 seconds 
+  Import took 0.069211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Fire.png
+  artifactKey: Guid(d2950f5485654db4b90effb4ef616686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Common/Fire.png using Guid(d2950f5485654db4b90effb4ef616686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a62c17356301c11d0adf4e6afdaa62c') in 0.034286 seconds 
+  Import took 0.045281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lock Open.png
+  artifactKey: Guid(419159ae31cba984092b4c00d435a048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Icon/Common/Lock Open.png using Guid(419159ae31cba984092b4c00d435a048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e166149936ea0aac3a868b1614ed894') in 0.033445 seconds 
+  Import took 0.042948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Models/mahogfloor-Unity/mahogfloor_AO.png
+  artifactKey: Guid(2bfaac1a97153564e869438c5a49fa1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/mahogfloor-Unity/mahogfloor_AO.png using Guid(2bfaac1a97153564e869438c5a49fa1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b695c40330704f207af18630fb0862b') in 0.029561 seconds 
+  Import took 0.039217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Notification.png
+  artifactKey: Guid(adf3c8361dd31e1448483775ea241c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Editor Notification.png using Guid(adf3c8361dd31e1448483775ea241c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45739fb09866aff180205a61c0461c3') in 0.027226 seconds 
+  Import took 0.037780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Models/guy/guy_Glove_normal.png
+  artifactKey: Guid(a08653f537462464ab1972a9b022230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/guy/guy_Glove_normal.png using Guid(a08653f537462464ab1972a9b022230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d33a7e805eb97f644367b5ba068ebf') in 0.025332 seconds 
+  Import took 0.035291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/Open World BG Placeholder.jpg
+  artifactKey: Guid(7088517347e2ec2428874ac5c2dc5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Backgrounds/Open World BG Placeholder.jpg using Guid(7088517347e2ec2428874ac5c2dc5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecb9d138d51f1f68f612e03c9f729d8') in 0.051747 seconds 
+  Import took 0.063127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Modal Window.png
+  artifactKey: Guid(09ea67856d663aa4cbe647f4ffec2959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Textures/Demo/Icons/Modal Window.png using Guid(09ea67856d663aa4cbe647f4ffec2959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4389d2d75ba3ac4199521e4b95137df6') in 0.031119 seconds 
+  Import took 0.041316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Indicator Item Filled.png
+  artifactKey: Guid(d085f7f65fa64f54bb0b7439943ef8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Indicator Item Filled.png using Guid(d085f7f65fa64f54bb0b7439943ef8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0175e123031a8ff6016d333347224afa') in 0.021274 seconds 
+  Import took 0.030484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Location Filled.png
+  artifactKey: Guid(05b4e0ff1d4456c44b526b345f1a9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Ultimate HUD Skins/Textures/Icons/Map/Location Filled.png using Guid(05b4e0ff1d4456c44b526b345f1a9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b33e1b10ffefdb17ad4cb69b0f64127') in 0.030577 seconds 
+  Import took 0.038525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Gradient Header.png
+  artifactKey: Guid(cdccb4a4a9b4fa34192ef518f14b5cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsPacks/Modern UI Pack/Editor/Icons/Gradient Header.png using Guid(cdccb4a4a9b4fa34192ef518f14b5cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeef5d67969c43d8fe948d77e97e70ab') in 0.033128 seconds 
+  Import took 0.041083 seconds .
+
