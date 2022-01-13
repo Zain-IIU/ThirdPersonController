@@ -5,9 +5,12 @@ using System;
 public class Stall : MonoBehaviour
 {
 
-    [SerializeField] Transform[] stallItems;
+    [SerializeField] List<Transform> stallItems = new List<Transform>();
+    //positions from which we will be stealing the items
 
-    int curItem;
+    int curItem; //how much items have we stolen or how much a specific stall has left
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,15 @@ public class Stall : MonoBehaviour
     }
     public Transform GetStallItem(int index)
     {
-        return stallItems[index];
+        if (index < stallItems.Count )
+            return stallItems[index];
+        else
+            return null; 
+    }
+    public void RemoveItemAt(int removeTill)
+    {
+        
+            stallItems.RemoveRange(0, removeTill);
+       
     }
 }

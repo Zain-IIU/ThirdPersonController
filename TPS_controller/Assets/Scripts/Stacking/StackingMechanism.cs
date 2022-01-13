@@ -4,8 +4,13 @@ using UnityEngine;
 using System;
 using DG.Tweening;
 
+
+//we will be moving stall items from banana Pos to delivery Pos upon stacking and unstacking respectively
+
 public class StackingMechanism : MonoBehaviour
 {
+    [SerializeField]
+    int curPos;  //this is where we will start stacking after we have emptied one stall or have delivered
 
     [SerializeField]
     Pos[] bananaPoses;
@@ -14,51 +19,61 @@ public class StackingMechanism : MonoBehaviour
     Stall stall;
     [SerializeField]
     DeliveryPoint deliverPoint;
-    int curPos;
+
+    
 
     [SerializeField]
     float lerpingTime;
     [SerializeField]
     Ease easeType;
 
-    bool isClicked;
-    // Start is called before the first frame update
-    void Start()
-    {
-        curPos = 0;
-    }
+    
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0) && !isClicked)
+        if(Input.GetMouseButtonDown(0))
         {
             StartStacking();
-            isClicked = true;
         }
         if(Input.GetMouseButtonDown(1))
         {
             UnStack();
         }
 
+
     }
     public void StartStacking()
     {
        for(int i=0;i<bananaPoses.Length;i++)
         {
-            stall.GetStallItem(i).parent = bananaPoses[i].pos;
-            stall.GetStallItem(i).DOLocalMove(Vector3.zero, 0.5f).SetEase(easeType);
-            stall.IncrementItemValue();
-            bananaPoses[i].isFilled = true;
-            curPos++;
+            if(!bananaPoses[i].isFilled && stall.GetStallItem(i) != null)
+            {
+                Debug.Log(curPos);
+                stall.GetStallItem(i).parent = bananaPoses[i].pos;
+                stall.GetStallItem(i).DOLocalMove(Vector3.zero, 0.5f).SetEase(easeType);
+                bananaPoses[i].isFilled = true;
+                curPos++;
+            }
+           
         }
+       
     }
+
     public void UnStack()
     {
+        
         for (int i = 0; i < bananaPoses.Length; i++)
         {
-            bananaPoses[i].pos.DOMove(deliverPoint.GetItem(i).position, lerpingTime).SetEase(easeType);
-            deliverPoint.IncrementItemValue();
-            bananaPoses[i].isDelivered = true;
-            curPos--;
+            if (stall.GetStallItem(i) != null)
+            {
+                Debug.Log(curPos);
+                stall.GetStallItem(i).parent = deliverPoint.GetItem(i);
+                stall.GetStallItem(i).DOLocalMove(Vector3.zero, 0.5f).SetEase(easeType);
+                bananaPoses[i].isFilled = false;
+            }
+          
         }
+        stall.RemoveItemAt(curPos);
+        curPos = 0;
+
     }
 }

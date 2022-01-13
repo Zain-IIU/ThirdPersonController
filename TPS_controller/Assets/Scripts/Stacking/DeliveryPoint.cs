@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class DeliveryPoint : MonoBehaviour
 {
-    [SerializeField] Transform[] deliveryPos;
-
-    int curItem;
+    [SerializeField] List<Transform> deliveryPos = new List<Transform>();
+   
+    int curItems;   //to keep track of how  items have been delivered
 
     // Start is called before the first frame update
     void Start()
     {
-        curItem = 0;
+        curItems = 0;
     }
 
-    public void IncrementItemValue()
-    {
-        curItem++;
-    }
+    
+    //getting the item to be delivered at
     public Transform GetItem(int index)
     {
         return deliveryPos[index];
     }
+   
 }
