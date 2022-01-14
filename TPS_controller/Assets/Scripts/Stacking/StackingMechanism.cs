@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using DG.Tweening;
 
 
@@ -9,71 +8,135 @@ using DG.Tweening;
 
 public class StackingMechanism : MonoBehaviour
 {
-    [SerializeField]
-    int curPos;  //this is where we will start stacking after we have emptied one stall or have delivered
-
-    [SerializeField]
-    Pos[] bananaPoses;
-
+    //would change when there's trigger implementation
     [SerializeField]
     Stall stall;
     [SerializeField]
-    DeliveryPoint deliverPoint;
-
-    
+    DeliveryPoint deliverPoint;         
+    //````````````````````````````````````````````````
 
     [SerializeField]
     float lerpingTime;
     [SerializeField]
     Ease easeType;
 
-    
+
+    [SerializeField] 
+    int height, columns, row;              //size of Grid
+    [SerializeField]
+    Vector3 MaxGrid = new Vector3();          //maxCapacity of grid
+    List<bool> flagList = new List<bool>();   //for dynamically alocating isFilled flags
+
+    [SerializeField]
+    bool[] isFilled;      //indicating which of the positions are filled
+
+    int curItems = 0;    //indicating curNumberofItem  use to place item when one stall has less items than our capacity
+
+    bool hasStacked = false;   //can't deliver when there is not stacked-up items 
+
+    bool isFull = false;
+
+    private void Start()
+    {
+        PopulateFillingFlags();
+    }
+
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            StartStacking();
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
-            UnStack();
-        }
-
+        //testing prupose
+        //if(Input.GetMouseButtonDown(0))
+        //{
+        //    StackGeneric();
+        //}
+        //if(Input.GetMouseButtonDown(1) && hasStacked)
+        //{
+        //    UnStackGeneric();
+        //    hasStacked = false;
+        //}
+        //```````````````
 
     }
-    public void StartStacking()
+
+    public void StackGeneric()
     {
-       for(int i=0;i<bananaPoses.Length;i++)
+        if(CheckCapacity())
         {
-            if(!bananaPoses[i].isFilled && stall.GetStallItem(i) != null)
+            for (int h = 0; h < row; h++)
             {
-                Debug.Log(curPos);
-                stall.GetStallItem(i).parent = bananaPoses[i].pos;
-                stall.GetStallItem(i).DOLocalMove(Vector3.zero, 0.5f).SetEase(easeType);
-                bananaPoses[i].isFilled = true;
-                curPos++;
+                for (int r = 0; r < height; r++)
+                {
+                    for (int c = 0; c < columns; c++)
+                    {
+                        if (!isFilled[curItems] && stall.GetStallItem(curItems) != null)
+                        {
+                          
+                            stall.GetStallItem(curItems).DOMove(new Vector3(h, r, c), 0.5f).SetEase(easeType);
+                            isFilled[curItems] = true;
+                            curItems++;
+                        }
+
+                    }
+
+                }
             }
-           
+            hasStacked = true;
+        }
+        else
+        {
+            Debug.Log("No Capacity");
         }
        
+        
     }
 
-    public void UnStack()
+    public void UnStackGeneric()
     {
-        
-        for (int i = 0; i < bananaPoses.Length; i++)
+        int index = 0;
+        for (int h = 0; h < row; h++)
         {
-            if (stall.GetStallItem(i) != null)
+            for (int r = 0; r < height; r++)
             {
-                Debug.Log(curPos);
-                stall.GetStallItem(i).parent = deliverPoint.GetItem(i);
-                stall.GetStallItem(i).DOLocalMove(Vector3.zero, 0.5f).SetEase(easeType);
-                bananaPoses[i].isFilled = false;
-            }
-          
-        }
-        stall.RemoveItemAt(curPos);
-        curPos = 0;
+                for (int c = 0; c < columns; c++)
+                {
+                    if (stall.GetStallItem(index) != null)
+                    {
+                        stall.GetStallItem(index).DOMove(deliverPoint.GetItem(index).position, 0.5f).SetEase(easeType);
+                        isFilled[index] = false;
+                        index++;
+                    }
 
+                }
+
+            }
+        }
+        stall.RemoveItemAt(curItems);
+        curItems = 0;
+    }
+
+   
+
+    
+    private void PopulateFillingFlags()
+    {
+        for (int i = 0; i < MaxGrid.x * MaxGrid.y * MaxGrid.z; i++)
+        {
+            flagList.Add(false);
+        }
+        isFilled = flagList.ToArray();
+    }
+    private bool CheckCapacity()
+    {
+        int counter = 0;
+        for (int i = 0; i < curItems; i++)
+        {
+            if (isFilled[i] == true)
+                counter++;
+        }
+
+        if (counter == row*columns*height)
+            return false;
+        else
+            return true;
     }
 }
+
