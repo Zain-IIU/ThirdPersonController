@@ -37,15 +37,12 @@ public class AimingSystem : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.Q)==false)
-        {
+       
             xAxis.Update(Time.fixedDeltaTime);
             yAxis.Update(Time.fixedDeltaTime);
             cameraLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0f);
             yRot = mainCam.transform.rotation.eulerAngles.y;
-         
-        }
-       
+      
         transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), turnSpeed);
 
 

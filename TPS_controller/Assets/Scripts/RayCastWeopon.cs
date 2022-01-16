@@ -56,8 +56,7 @@ public class RayCastWeopon : MonoBehaviour
 
     private void Shoot()
     {
-        if(Input.GetKey(KeyCode.Q) == false)
-        {
+       
             if (isSingleShot)
             {
                 if (Input.GetMouseButtonDown(0) && !hasShot)
@@ -82,7 +81,7 @@ public class RayCastWeopon : MonoBehaviour
             {
                 StopFiring();
             }
-        }
+       
        
     }
     IEnumerator waitforNextShot()

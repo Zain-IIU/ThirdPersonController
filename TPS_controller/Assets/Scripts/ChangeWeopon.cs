@@ -24,8 +24,11 @@ public class ChangeWeopon : MonoBehaviour
     {
         totalGun = 0;
     }
-  
-  
+    private void Update()
+    {
+        ChangeWeapons();
+    }
+
     private void ChangeWeapons()
     {
         if (weoponsList != null && hasWeopon && totalGun > 1)
@@ -59,7 +62,7 @@ public class ChangeWeopon : MonoBehaviour
 
             if (curWeoponIndex != previousWeopon)
             {
-            //    SelectWeopon();
+                SelectWeopon();
 
             }
 
@@ -67,26 +70,14 @@ public class ChangeWeopon : MonoBehaviour
     }
 
 
-    public void SelectWeopon(string curWeoponName)
+    public void SelectWeopon()
     {
         int i = 0;
 
-        int value = -1;
-        for(int j=0;j<weoponsList.Length;j++)
-        {
-            if(weoponsList[j].name==curWeoponName && weoponsList[j].childCount>0)
-            {
-                value = weoponsList[j].GetSiblingIndex();
-            }
-        }
-
-        Debug.Log(value);
-
-        if(value!=-1)
-        {
+       
             foreach (Transform child in transform)
             {
-                if (i == value && child.childCount > 0)
+                if (i == curWeoponIndex && child.childCount > 0)
                 {
                     child.gameObject.SetActive(true);
                     ActiveWeopon.instance.EquipWeopon(child.GetChild(0).GetComponent<RayCastWeopon>());
@@ -97,7 +88,7 @@ public class ChangeWeopon : MonoBehaviour
 
                 i++;
             }
-        }
+        
        
     }
     public void IncrementWeopons()
