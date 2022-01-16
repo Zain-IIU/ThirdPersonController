@@ -14339,7 +14339,7 @@ MonoBehaviour:
   bulletEffect: {fileID: 0}
   isSingleShot: 1
   _Multi: 0
-  _Single: 0.5
+  _Single: 0.3
   recoil: {fileID: 0}
 --- !u!114 &-5716834079999758560
 MonoBehaviour:
