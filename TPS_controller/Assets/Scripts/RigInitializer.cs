@@ -28,6 +28,21 @@ public class RigInitializer : MonoBehaviour
     [SerializeField]    Transform spine_2;
     [SerializeField]    Transform head_bone;
     [SerializeField]    Transform rightShoulder;
+    [Header("left Arm")]
+    [SerializeField] Transform root_L;
+    [SerializeField] Transform mid_L;
+    [SerializeField] Transform tip_L;
+
+    [SerializeField] Transform ref_L;
+    [SerializeField] Transform hint_L;
+
+    [Header("Right Arm")]
+    [SerializeField] Transform root_R;
+    [SerializeField] Transform mid_R;
+    [SerializeField] Transform tip_R;
+
+    [SerializeField] Transform ref_R;
+    [SerializeField] Transform hint_R;
 
     [Header("Targets")]
     [SerializeField]    Transform aimTarget;
@@ -51,13 +66,32 @@ public class RigInitializer : MonoBehaviour
 
         //setting up Weopon IK
         pose_IK.data.constrainedObject = curWeoponPos;
-        //pose_IK.data.sourceObjects.Add(rightShoulder);
+        WeightedTransform newTransform = new WeightedTransform(rightShoulder, 1);
+
         aim_IK.data.constrainedObject = curWeoponPos;
         recoil_IK.data.constrainedObject = curWeoponPos;
         recoil_IK.data.sourceObject = recoil_IK.gameObject.transform;
 
-        rigbuilder.Build();
+       
+        aim_IK.data.sourceObjects.Add(new WeightedTransform(aimTarget, 1));
 
+        pose_IK.data.sourceObjects.Add(newTransform);
+
+        //setting up Hand_Ik
+        rightHand_IK.data.root = root_R;
+        rightHand_IK.data.mid = mid_R;
+        rightHand_IK.data.tip = tip_R;
+        rightHand_IK.data.target = ref_R;
+        rightHand_IK.data.hint = hint_R;
+
+        leftHand_IK.data.root = root_L;
+        leftHand_IK.data.mid = mid_L;
+        leftHand_IK.data.tip = tip_L;
+        leftHand_IK.data.target = ref_L;
+        leftHand_IK.data.hint = hint_L;
+
+
+        rigbuilder.Build();
         Debug.Log("Transforms Added");
     }
 }
