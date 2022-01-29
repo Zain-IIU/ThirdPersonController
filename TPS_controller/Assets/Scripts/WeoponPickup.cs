@@ -49,8 +49,8 @@ public class WeoponPickup : MonoBehaviour
                     if (RocketPos.childCount > 0)
                         Destroy(RocketPos.GetChild(0).gameObject);
                     else
-                        //changing order as sibling
                         RocketPos.SetSiblingIndex(childCounter);
+
                     playerWeopon.curWeoponIndex = childCounter;
                     Newweopon.transform.parent = RocketPos;
                     RocketPos.gameObject.SetActive(true);

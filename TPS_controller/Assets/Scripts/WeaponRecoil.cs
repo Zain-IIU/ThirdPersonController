@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class WeaponRecoil : MonoBehaviour
 {
-    [HideInInspector]
+    [HideInInspector] 
      public AimingSystem playerCamera;
     [HideInInspector]
     public CinemachineImpulseSource cameraShake;
