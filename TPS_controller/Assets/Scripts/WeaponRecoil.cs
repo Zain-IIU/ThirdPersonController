@@ -65,5 +65,4 @@ public class WeaponRecoil : MonoBehaviour
         horizontalRecoil /= 2;
         curTime = recoilDuration;
     }
-
 }

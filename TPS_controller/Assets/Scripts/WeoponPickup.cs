@@ -25,7 +25,6 @@ public class WeoponPickup : MonoBehaviour
 
     RayCastWeopon Newweopon;
 
-    [SerializeField]
     GameObject weoponParent;
     ChangeWeopon playerWeopon;
 
@@ -33,6 +32,7 @@ public class WeoponPickup : MonoBehaviour
 
     private void Awake()
     {
+        weoponParent = GameObject.FindObjectOfType<ChangeWeopon>().gameObject;
         playerWeopon = weoponParent.GetComponent<ChangeWeopon>();
     }
     private void OnCollisionEnter (Collision other)

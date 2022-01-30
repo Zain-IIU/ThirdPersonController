@@ -31,7 +31,6 @@ public class ActiveWeopon : MonoBehaviour
     Transform SniperPos;
     [SerializeField]
     Transform ShotGunPos;
-    [SerializeField] Cinemachine3rdPersonFollow _camera;
     public Animator RigController;
     bool isEquied;
 
@@ -56,6 +55,7 @@ public class ActiveWeopon : MonoBehaviour
         weopon.GetComponent<WeaponRecoil>().playerCamera = playerCam;
         weopon.Rig = RigController;
         RigController.Play(weopon.Type.ToString());
+       
     }
 
    

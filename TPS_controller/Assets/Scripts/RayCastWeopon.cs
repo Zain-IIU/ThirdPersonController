@@ -129,12 +129,12 @@ public class RayCastWeopon : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             isAiming = true;
-            CameraManager.instance.ChangeMainCamPriority(true);
+            
         }
         else if (Input.GetMouseButtonUp(1))
         {
             isAiming = false;
-            CameraManager.instance.ChangeMainCamPriority(false);
+            
         }
     }
 

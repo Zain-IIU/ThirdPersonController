@@ -1335,7 +1335,7 @@ GameObject:
   - component: {fileID: 1871746873}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1492,7 +1492,6 @@ MonoBehaviour:
   RocketPos: {fileID: 4344575801314778058}
   SniperPos: {fileID: 4344575801517582351}
   ShotGunPos: {fileID: 4344575802016218076}
-  _camera: {fileID: 0}
   RigController: {fileID: 4344575800956562524}
 --- !u!114 &3672991310013912072
 MonoBehaviour:
