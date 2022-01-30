@@ -33,6 +33,7 @@ public class ActiveWeopon : MonoBehaviour
     Transform ShotGunPos;
     public Animator RigController;
     bool isEquied;
+  
 
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class ActiveWeopon : MonoBehaviour
         isEquied = true;
         weopon = newWeopon;    
         weopon.GetComponent<WeaponRecoil>().playerCamera = playerCam;
+        
         weopon.Rig = RigController;
         RigController.Play(weopon.Type.ToString());
        

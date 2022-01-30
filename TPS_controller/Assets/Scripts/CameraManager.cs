@@ -11,7 +11,9 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField]
     Cinemachine.CinemachineVirtualCamera  mainCam_Normal;
- 
+
+    [SerializeField]
+    Cinemachine.CinemachineVirtualCamera mainCam_Aim;
 
 
     private void Awake()
@@ -25,11 +27,13 @@ public class CameraManager : MonoBehaviour
     {
         if (flag)
         {
-            DOTween.To(() => mainCam_Normal.m_Lens.FieldOfView, x => mainCam_Normal.m_Lens.FieldOfView = x, 25f, 0.15f);
+            mainCam_Aim.m_Priority = 20;
+            mainCam_Normal.m_Priority = 10;
         }
         else
         {
-            DOTween.To(() => mainCam_Normal.m_Lens.FieldOfView, x => mainCam_Normal.m_Lens.FieldOfView = x,40f, 0.15f);
+            mainCam_Aim.m_Priority = 10;
+            mainCam_Normal.m_Priority = 20;
 
         }
 

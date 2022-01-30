@@ -1275,7 +1275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 1.5799999, z: -27}
+  m_LocalPosition: {x: 1.52, y: 1.5799999, z: -26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1578011865}
@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam_Normal: {fileID: 63284000}
+  mainCam_Aim: {fileID: 1662516786}
 --- !u!4 &1143184605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4344575801434681872, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
@@ -1829,6 +1830,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99aa020b8911e7748afadbecc70b9966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1662516786 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1662516786, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
+  m_PrefabInstance: {fileID: 4344575802406093617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1707936531
@@ -2598,16 +2610,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1662516784, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1871746873, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
       propertyPath: aimTarget
       value: 
       objectReference: {fileID: 1578011865}
     - target: {fileID: 3672991310013912069, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3672991310013912069, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4157603720324550335, guid: 635da25cb0a0356409fde783851ae8fb, type: 3}

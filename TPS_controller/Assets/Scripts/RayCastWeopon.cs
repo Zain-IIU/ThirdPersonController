@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+using DG.Tweening;
 
 public class RayCastWeopon : MonoBehaviour
 {
@@ -35,13 +37,15 @@ public class RayCastWeopon : MonoBehaviour
     float _Single;
     [SerializeField]
     WeaponRecoil recoil;
+    
     #endregion
 
-  
+
     void Awake()
     {
         raycastDestination = GameObject.FindObjectOfType<CrossHairTarget>().transform;
         recoil = this.gameObject.GetComponent<WeaponRecoil>();
+       
     }
 
     private void Start()
@@ -126,16 +130,18 @@ public class RayCastWeopon : MonoBehaviour
 
     private void Aim()
     {
+        
         if (Input.GetMouseButton(1))
         {
             isAiming = true;
-            
+            CameraManager.instance.ChangeMainCamPriority(isAiming);        
         }
         else if (Input.GetMouseButtonUp(1))
         {
             isAiming = false;
-            
+            CameraManager.instance.ChangeMainCamPriority(isAiming);
         }
+       
     }
 
     private void RecoilAnimation(string weoponName)
