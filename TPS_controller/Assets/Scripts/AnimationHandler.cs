@@ -7,14 +7,13 @@ public class AnimationHandler : MonoBehaviour
 
     private Animator Anim;
     private bool startAnimating;
-    
-    private void Awake()
-    {
-        Anim = GetComponent<Animator>();
-    }
+
+  
+   
     private void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        Anim = GetComponent<Animator>();
+      
         GameManager.instance.onGameStarted += startAnimator;
     }
 
@@ -30,6 +29,7 @@ public class AnimationHandler : MonoBehaviour
         SetTransition(X, Y);
         
     }
+    
     void SetTransition(float X,float Y)
     {
         if(startAnimating)
