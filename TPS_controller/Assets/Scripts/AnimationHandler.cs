@@ -5,19 +5,18 @@ using UnityEngine;
 public class AnimationHandler : MonoBehaviour
 {
 
-    private Animator Anim;
+    private Animator anim;
     private bool startAnimating;
 
-  
-   
+    
     private void Start()
     {
-        Anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
       
-        GameManager.instance.onGameStarted += startAnimator;
+        GameManager.instance.onGameStarted += StartAnimator;
     }
 
-    private void startAnimator()
+    private void StartAnimator()
     {
         startAnimating = true;
     }
@@ -34,10 +33,10 @@ public class AnimationHandler : MonoBehaviour
     {
         if(startAnimating)
         {
-            Anim.SetFloat("Vertical", Y);
-            Anim.SetFloat("Horizontal", X);
-            Anim.SetBool("run", Input.GetButton("Run"));
-            Anim.SetBool("isEquiped", ActiveWeopon.instance.hasWeopon());
+            anim.SetFloat("Vertical", Y);
+            anim.SetFloat("Horizontal", X);
+            anim.SetBool("run", Input.GetButton("Run"));
+            anim.SetBool("isEquiped", ActiveWeopon.instance.hasWeopon());
         }
         
     }

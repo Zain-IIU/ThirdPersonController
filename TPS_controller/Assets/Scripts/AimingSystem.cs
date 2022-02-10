@@ -44,6 +44,6 @@ public class AimingSystem : MonoBehaviour
             yRot = mainCam.transform.rotation.eulerAngles.y;
          transform.DORotateQuaternion(Quaternion.Euler(0f, yRot, 0f), turnSpeed);
     }
-
+   
    
 }
